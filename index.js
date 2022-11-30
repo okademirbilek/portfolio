@@ -9,15 +9,15 @@ import {CSS3DRenderer,CSS3DObject} from 'three/examples/jsm/renderers/CSS3DRende
 
 import data from "./projects.js"
 import gsap from 'gsap';
-// const library = new URL('../assets/library14.glb',import.meta.url);
+const library = new URL('../assets/library14.glb',import.meta.url);
 
-// const waterBaseColor = new URL("../img/Water_002_COLOR.jpg",import.meta.url);
-// const waterNormalMap = new URL("../img/Water_002_NORM.jpg",import.meta.url);
-// const waterHeightMap = new URL("../img/Water_002_DISP.png",import.meta.url);
-// const waterRoughness = new URL("../img/Water_002_ROUGH.jpg",import.meta.url);
-// const waterAmbientOcclusion = new URL("../img/Water_002_OCC.jpg",import.meta.url);
+const waterBaseColor = new URL("../img/Water_002_COLOR.jpg",import.meta.url);
+const waterNormalMap = new URL("../img/Water_002_NORM.jpg",import.meta.url);
+const waterHeightMap = new URL("../img/Water_002_DISP.png",import.meta.url);
+const waterRoughness = new URL("../img/Water_002_ROUGH.jpg",import.meta.url);
+const waterAmbientOcclusion = new URL("../img/Water_002_OCC.jpg",import.meta.url);
 
-// const drawing=new URL("../img/drawing.jpg",import.meta.url);
+const drawing=new URL("../img/drawing.jpg",import.meta.url);
 
 
 
@@ -263,7 +263,7 @@ const textureLoader = new THREE.TextureLoader(loadingManager);
 
 ///********************drawing************************ */
 var material = new THREE.MeshLambertMaterial({
-    map: textureLoader.load("../img/drawing.jpg")
+    map: textureLoader.load(drawing)
   });
   
   // create a plane geometry for the image with a width of 10
@@ -307,12 +307,11 @@ scene.add(dirLight);
 const sphereGeometry =new THREE.SphereBufferGeometry(6,128,128); 
 //{ color: 0x0a7d15 }
 const sphereMaterial =new THREE.MeshStandardMaterial({
-    map: textureLoader.load("../img/Water_002_COLOR.jpg"), 
-    normalMap: textureLoader.load("../img/Water_002_NORM.jpg"), 
-    displacementMap: textureLoader.load("../img/Water_002_DISP.png"), displacementScale: 0.01, 
-    roughnessMap: textureLoader.load("../img/Water_002_ROUGH.jpg"), roughness: 0, 
-    aoMap: textureLoader.load("../img/Water_002_OCC.jpg") 
-
+    map: textureLoader.load(waterBaseColor), 
+    normalMap: textureLoader.load(waterNormalMap), 
+    displacementMap: textureLoader.load(waterHeightMap), displacementScale: 0.01, 
+    roughnessMap: textureLoader.load(waterRoughness), roughness: 0, 
+    aoMap: textureLoader.load(waterAmbientOcclusion) 
 });
 
 const plane = new THREE.Mesh( sphereGeometry,sphereMaterial);
@@ -362,7 +361,7 @@ scene.add(light2);
 //add main object to scene 
 const assetLoader = new GLTFLoader(loadingManager);
 let position = 0;
-assetLoader.load('../assets/library14.glb',function(gltf){
+assetLoader.load(library,function(gltf){
     const model=gltf.scene;
 
     model.scale.set(0.2,0.2,0.2);
