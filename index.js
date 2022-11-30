@@ -135,6 +135,7 @@ ptag.textContent=`
 let myimg=document.createElement("img")
 myimg.id="myimg";
 myimg.src="https://github.com/okademirbilek/dontdismantleit/blob/main/images/okan.jpg?raw=true"
+myimg.setAttribute('draggable',false);
 
 const linkedin=document.createElement("a");
 linkedin.href="https://www.linkedin.com/in/okan-demirbilek-55b314228/";
@@ -184,7 +185,7 @@ function mainProject(){
         div3.innerHTML+=`<div key=${item.id} class="map-item">
                                 <h3 class="projects--name">${item.name}</h3>
                                 <div class="project--img--div">
-                                    <img  id=${item.id} class="project--img" src=${item.url} width="150px"  heigth="150px" ><img>
+                                    <img draggable="false"  id=${item.id} class="project--img" src=${item.url} width="150px"  heigth="150px" ><img>
                                 </div>
                             </div>
             `
@@ -224,7 +225,7 @@ div3.addEventListener( 'click', function ( event ) {
             div4.innerHTML=   `<div class="project--div2">
                      <button class="back--btn" id="warning">back</button>
                     <p class="project--p2" >${i.name}</p>
-                    <img class="project--img2" src=${i.url} width="150px  heigth="150px"><img>
+                    <img class="project--img2" draggable="false" src=${i.url} width="150px  heigth="150px"><img>
                     <p class="project--inf" >${i.exp} </p>
                     <a class="project--github" target="__blank" href=${i.url2} >Github Link</a>
 
