@@ -213,11 +213,10 @@ mainProject()
 
 let div4;
 let divContainer4;
-
 div3.addEventListener( 'click', function ( event ) { 
     for(const i of data.data.projects ){
         if( event.target.id == i.id ) {
-            //console.log("clicked",event.target.id)
+            console.log("clicked",event.target.id)
             div4=document.createElement('div');
             div4.className="project--info--div"
             
@@ -233,7 +232,7 @@ div3.addEventListener( 'click', function ( event ) {
                 `
 
             divContainer4=new CSS3DObject(div4);
-            divContainer4.id="divContainer4";
+            //divContainer4.id="divContainer4";
             divContainer4.scale.set(0.1,0.1,0.1);
         
             divContainer4.position.x=-78.5;
