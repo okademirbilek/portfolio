@@ -3,10 +3,10 @@ export default {
         "projects": [
             {
                 "id": "1",
-                "name": "Threejs Portfolio website",
+                "name": "Threejs Portfolio Website",
                 "url": "https://github.com/okademirbilek/lostarkimages/blob/main/threejsimg.PNG?raw=true",
                 "url2": "https://github.com/okademirbilek/portfolio",
-                "exp":"İts a 3D interactive portfolio website.Built using with JavaScript Threejs and Blender ",
+                "exp":"Its a 3D interactive portfolio website.Built using with JavaScript Threejs and Blender ",
                 "width": 600,
                 "height": 908
             },
