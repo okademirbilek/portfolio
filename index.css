@@ -294,6 +294,7 @@ label{
     position: absolute;
     width: 870px;
     height: 410px;
+    
     background: #cac7c2;
     background: -webkit-linear-gradient(0deg, #cac7c2 0%, #916a32 100%);
     background: linear-gradient(0deg, #cac7c2 0%, #916a32 100%);
@@ -302,7 +303,8 @@ label{
 
 .map-item{
     display: inline-block;
-    margin: 70px 120px;
+    margin: 70px 90px;
+    
 }
 
 
@@ -313,19 +315,16 @@ label{
     color: black;
     font-family:Rubik-Distressed-regular;
     font-size: 23px;
-    margin-top:-10px;
+    margin-top:-50px;
     margin-left: -2px;
-    width: 170px;
-    
-
-   
+    width: 170px; 
 }
 
 .project--img--div{
     position: absolute;
     width: 150px;
     height: 150px;
-    margin-top:70px;
+    margin-top:30px;
     margin-left: 10px;
     background-color: white;
     border-radius: 5px; 
