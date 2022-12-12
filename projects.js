@@ -12,10 +12,10 @@ export default {
             },
             {
                 "id": "2",
-                "name": "Quizzica app with react",
+                "name": "Quizzica app",
                 "url": "https://github.com/okademirbilek/lostarkimages/blob/main/quizzica.JPG?raw=true",
                 "url2": "https://github.com/okademirbilek/QuizGame",
-                "exp":"It's a scrimba solo project Quizzica.After answering the questions in the category you chose, you can see how many of them were correct.It gets the API data from the Open Trivia database.",
+                "exp":"It's a scrimba solo React project Quizzica.After answering the questions in the category you chose, you can see how many of them were correct.It gets the API data from the Open Trivia database.",
                 "width": 600,
                 "height": 908
             },
