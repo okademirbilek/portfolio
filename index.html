@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Home</title>
-</head>
-<body class="scene">
+  </head>
+  <body class="scene">
     <div class="progress-bar-container">
-        <label for="progress-bar" id="progress-label">Loading</label>
-        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-        <progress id="progress-bar" value="0" max="100"></progress>
-        <p class="drag">Drag and click for better view</p>
-        <button id="start-btn" >Start</button>
+      <label for="progress-bar" id="progress-label">Loading</label>
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <progress id="progress-bar" value="0" max="100"></progress>
+      <p class="drag">Drag and click for better view</p>
+      <button id="start-btn">Start</button>
     </div>
 
     <div id="info">
-        <ul class="navbar--ul">
-            <li class="navbar--li"><a href="#" id="homeEvent" draggable="false">Home</a></li>
-            <li class="navbar--li"><a href="#" id="aboutMeEvent" draggable="false">About Me</a></li>
-            <li class="navbar--li"><a href="#" id="skillsEvent" draggable="false">Skills</a></li>
-            <li class="navbar--li"><a href="#" id="projectsEvent" draggable="false">Projects</a></li>
-            <li class="navbar--li"><a href="#" id="hobbiesEvent" draggable="false">Hobbies</a></li>
-        </ul>
+      <ul class="navbar--ul">
+        <li class="navbar--li">
+          <a href="#" id="homeEvent" draggable="false">Home</a>
+        </li>
+        <li class="navbar--li">
+          <a href="#" id="aboutMeEvent" draggable="false">About Me</a>
+        </li>
+        <li class="navbar--li">
+          <a href="#" id="skillsEvent" draggable="false">Skills</a>
+        </li>
+        <li class="navbar--li">
+          <a href="#" id="projectsEvent" draggable="false">Projects</a>
+        </li>
+        <li class="navbar--li">
+          <a href="#" id="hobbiesEvent" draggable="false">Hobbies</a>
+        </li>
+      </ul>
     </div>
     <script src="./index.js" type="module"></script>
-    
-</body>
+  </body>
 </html>
